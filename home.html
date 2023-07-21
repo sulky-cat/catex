@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		._loadWrapper_ {
+			overflow: hidden;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.4s ease-in-out 0s;
+		}
+
+		.lds-roller {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate3D(-50%, -50%, 0);
+			opacity: 1;
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+		}
+
+		.lds-roller div {
+			animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+			transform-origin: 40px 40px;
+		}
+
+		.lds-roller div:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #1e212c;
+			margin: -4px 0 0 -4px;
+		}
+
+		.lds-roller div:nth-child(1) {
+			animation-delay: -0.036s;
+		}
+
+		.lds-roller div:nth-child(1):after {
+			top: 63px;
+			left: 63px;
+		}
+
+		.lds-roller div:nth-child(2) {
+			animation-delay: -0.072s;
+		}
+
+		.lds-roller div:nth-child(2):after {
+			top: 68px;
+			left: 56px;
+		}
+
+		.lds-roller div:nth-child(3) {
+			animation-delay: -0.108s;
+		}
+
+		.lds-roller div:nth-child(3):after {
+			top: 71px;
+			left: 48px;
+		}
+
+		.lds-roller div:nth-child(4) {
+			animation-delay: -0.144s;
+		}
+
+		.lds-roller div:nth-child(4):after {
+			top: 72px;
+			left: 40px;
+		}
+
+		.lds-roller div:nth-child(5) {
+			animation-delay: -0.18s;
+		}
+
+		.lds-roller div:nth-child(5):after {
+			top: 71px;
+			left: 32px;
+		}
+
+		.lds-roller div:nth-child(6) {
+			animation-delay: -0.216s;
+		}
+
+		.lds-roller div:nth-child(6):after {
+			top: 68px;
+			left: 24px;
+		}
+
+		.lds-roller div:nth-child(7) {
+			animation-delay: -0.252s;
+		}
+
+		.lds-roller div:nth-child(7):after {
+			top: 63px;
+			left: 17px;
+		}
+
+		.lds-roller div:nth-child(8) {
+			animation-delay: -0.288s;
+		}
+
+		.lds-roller div:nth-child(8):after {
+			top: 56px;
+			left: 12px;
+		}
+
+		@keyframes lds-roller {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220519160759">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="_loadWrapper_">
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="header__top top-header">
+					<div class="top-header__container">
+						<div class="top-header__schedule">
+							<span>24/7 по телефону</span> <a href="4055550128">(405) 555-0128</a>
+						</div>
+						<nav class="top-header__nav nav-site">
+							<ul data-da=".burger-menu__row_menu-site,991.98">
+								<li><a href="#">Доставка и возврат</a></li>
+								<li><a href="#">Отследить заказ</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="top-header__choose-price choose-price">
+							<select data-scroll class="choose-price__select" name="form[]">
+								<option data-asset="img/header/flag-usa.png" value="Eng">Eng / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng2">Eng2 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng3">Eng3 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng4">Eng4 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng5">Eng5 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng6">Eng6 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng7">Eng7 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng8">Eng8 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng9">Eng9 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng10">Eng10 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng11">Eng11 / $</option>
+							</select>
+						</div>
+						<div class="top-header__login">
+							<button data-popup="#sign-in" type="button">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-login"></use>
+								</svg>
+								<span>Log in</span>
+							</button>
+							<button data-popup="#sign-up" type="button"><span>Register</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="header__middle middle-header">
+					<div class="middle-header__container">
+						<a href="#" class="middle-header__logo logo">
+							<span>Cate</span>
+							<img src="img/icons/logo.svg" alt="logo 'CATEX'">
+						</a>
+						<nav class="middle-header__nav">
+							<ul class="list-products" data-da=".burger-menu__row_menu-products,991.98">
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Женщинам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Размер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Платья</a></li>
+													<li class="fly-menu__item"><a href="#">Кардиганы и свитера</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки и топы</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Юбки</a></li>
+													<li class="fly-menu__item"><a href="#">Ночное белье</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+													<li class="fly-menu__item"><a href="#">Купальники</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Обувь на плоской подошве</a></li>
+													<li class="fly-menu__item"><a href="#">Туфли</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Мулы</a></li>
+													<li class="fly-menu__item"><a href="#">Слайдеры</a></li>
+													<li class="fly-menu__item"><a href="#">Тапочки</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Аксессуары для волос</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Ювелирные изделия</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+													<li class="fly-menu__item"><a href="#">Носки и колготки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Мужчинам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Девочкам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Платья</a></li>
+													<li class="fly-menu__item"><a href="#">Кардиганы и свитера</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки и топы</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Юбки</a></li>
+													<li class="fly-menu__item"><a href="#">Ночное белье</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+													<li class="fly-menu__item"><a href="#">Купальники</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Обувь на плоской подошве</a></li>
+													<li class="fly-menu__item"><a href="#">Туфли</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Мулы</a></li>
+													<li class="fly-menu__item"><a href="#">Слайдеры</a></li>
+													<li class="fly-menu__item"><a href="#">Тапочки</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Аксессуары для волос</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Ювелирные изделия</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+													<li class="fly-menu__item"><a href="#">Носки и колготки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Мальчикам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item sale">
+									<a href="#" class="list-products__button">Распродажа</a>
+								</li>
+							</ul>
+						</nav>
+						<form action="#" method="GET" data-coes="active" class="middle-header__search search-form search-form_header">
+							<button type="button" class="search-form__open-mob">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-search"></use>
+								</svg>
+							</button>
+							<div class="search-form__row">
+								<input autocomplete="on" type="text" name="form[]" placeholder="Поиск продуктов..." class="input">
+								<button class="search-form__go" type="submit">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-search"></use>
+									</svg>
+								</button>
+							</div>
+						</form>
+						<div class="middle-header__my-product">
+							<div class="middle-header__item middle-header__item_like">
+								<a class="middle-header__link" href="#">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+									<span>2</span>
+								</a>
+							</div>
+							<div class="middle-header__item middle-header__item_cart">
+								<button class="middle-header__link" type="button" data-open="cart-open">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+									</svg>
+									<span>4</span>
+								</button>
+							</div>
+						</div>
+						<button type="button" class="burger-btn" data-open="menu-open">
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<a href="#" class="header__bottom">
+					<div class="header__sale"><span><b>Скидка до 70%.</b> Shop our latest sale styles</span></div>
+				</a>
+			</header>
+			<main class="page">
+				<section class="page__main-slider main-slider">
+					<div data-swiper class="main-slider__swiper">
+						<div data-swiper-wrapper class="main-slider__swiper-wrapper">
+							<div data-swiper-slide class="main-slider__swiper-slide">
+								<picture><source data-srcset="img/main-slider/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/01.png" alt="man"></picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+							</div>
+							<div data-swiper-slide class="main-slider__swiper-slide">
+								<picture><source data-srcset="img/main-slider/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/02.png" alt="man"></picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+							</div>
+							<div data-swiper-slide class="main-slider__swiper-slide">
+								<picture><source data-srcset="img/main-slider/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/01.png" alt="man"></picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+							</div>
+							<div data-swiper-slide class="main-slider__swiper-slide">
+								<picture><source data-srcset="img/main-slider/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/02.png" alt="man"></picture>
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+							</div>
+						</div>
+						<button type="button" class="main-slider__swiper-button main-slider__swiper-button_left swiper-button swiper-button_main swiper-button_left" aria-label="Prev slide">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+							</svg>
+						</button>
+						<button type="button" class="main-slider__swiper-button main-slider__swiper-button_right swiper-button swiper-button_main swiper-button_right" aria-label="Next slide">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="main-slider__container">
+						<div class="main-slider__content">
+							<span class="main-slider__subtitle">Новая коллекция</span>
+							<h1 class="main-slider__title">Мужская <br> одежда 2022</h1>
+							<div class="main-slider__buttons">
+								<a href="#" class="main-slider__link button button_tall button_large button_outline">Распродажа</a>
+								<a href="#" class="main-slider__link button button_tall button_large button_solid">Мужская одежда</a>
+							</div>
+							<div class="main-slider__pagination">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__link-cards link-cards card-link_top">
+					<div class="link-cards__container">
+						<h2 class="hidden">Ссылки</h2>
+						<div class="link-cards__grid">
+							<a href="#" class="link-cards__card card-link">
+								<div class="card-link__picture">
+									<picture><source srcset="img/link-cards/01.webp" type="image/webp"><img src="img/link-cards/01.jpg" alt="womens"></picture>
+								</div>
+								<h3 class="card-link__title">Девушки </h3>
+							</a>
+							<a href="#" class="link-cards__card card-link">
+								<div class="card-link__picture">
+									<picture><source srcset="img/link-cards/02.webp" type="image/webp"><img src="img/link-cards/02.jpg" alt="Men’s"></picture>
+								</div>
+								<h3 class="card-link__title">Парни</h3>
+							</a>
+							<a href="#" class="link-cards__card card-link">
+								<div class="card-link__picture">
+									<picture><source srcset="img/link-cards/03.webp" type="image/webp"><img src="img/link-cards/03.jpg" alt="Kids’"></picture>
+								</div>
+								<h3 class="card-link__title">Дети</h3>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__new-arrivals new-arrivals">
+					<h2 class="new-arrivals__title title title_center">Новые поступления</h2>
+					<span class="new-arrivals__subtitle">Ознакомьтесь с нашими последними поступлениями в предстоящем сезоне <a href="#" class="new-arrivals__link link">Посмотреть коллекцию здесь</a></span>
+					<div class="new-arrivals__slider">
+						<div data-swiper class="new-arrivals__swiper">
+							<div data-swiper-wrapper class="new-arrivals__swiper-wrapper">
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<div class="card-product__rating rating" data-grade="5"></div>
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/01.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/01.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Черно-белая спортивная кепка</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$18.15</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input checked type="radio" name="choose-size-1" value="s"><span>s</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="m"><span>m</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="l"><span>l</span></label>
+												</div>
+												<div class="card-product__color choose-color">
+													<label class="choose-color__type"><input checked type="radio" name="choose-color-1" value="1"><span style="background-color: #C0DDED;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-1" value="2"><span style="background-color: #874E19;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-1" value="3"><span style="background-color: #000000;"></span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/02.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/02.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Солнцезащитные очки в металлической оправе</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$89.95</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-2" value="l"><span>l</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-2" value="xl"><span>xl</span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<div class="card-product__rating rating" data-grade="4"></div>
+											<label class="card-product__like like"> <input type="checkbox"> <span></span></label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/03.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/03.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Зеленый детский комбинезон</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$20.40</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-3" value="xs"><span>xs</span></label>
+													<label class="choose-size__type"><input checked type="radio" name="choose-size-3" value="s"><span>s</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-3" value="m"><span>m</span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/04.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/04.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Узкие укороченные джинсы со средней посадкой</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$40.00</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-4" value="l"><span>l</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-4" value="xl"><span>xl</span></label>
+												</div>
+												<div class="card-product__color choose-color">
+													<label class="choose-color__type"><input checked type="radio" name="choose-color-4" value="1"><span style="background-color: #C0DDED;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-4" value="3"><span style="background-color: #000000;"></span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<div class="card-product__rating rating" data-grade="5"></div>
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/05.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/05.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Красные серьги с подвесками</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$29.95</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__color choose-color">
+													<label class="choose-color__type"><input type="radio" name="choose-color-5" value="2"><span style="background-color: #874E19;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-5" value="3"><span style="background-color: #792330;"></span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/06.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/06.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Детская обувь со шнурками</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$30.60</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-6" value="m"><span>m</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-6" value="l"><span>l</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-6" value="xl"><span>xl</span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<div class="card-product__rating rating" data-grade="5"></div>
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/01.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/01.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Черно-белая спортивная кепка</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$18.15</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="xs"><span>xs</span></label>
+													<label class="choose-size__type"><input checked type="radio" name="choose-size-1" value="s"><span>s</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="m"><span>m</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="l"><span>l</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-1" value="xl"><span>xl</span></label>
+												</div>
+												<div class="card-product__color choose-color">
+													<label class="choose-color__type"><input checked type="radio" name="choose-color-1" value="1"><span style="background-color: #C0DDED;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-1" value="2"><span style="background-color: #874E19;"></span></label>
+													<label class="choose-color__type"><input type="radio" name="choose-color-1" value="3"><span style="background-color: #000000;"></span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+								<div data-swiper-slide class="new-arrivals__swiper-slide">
+									<article class="card-product">
+										<div class="card-product__info">
+											<label class="card-product__like like"> <input type="checkbox"> <span></span> </label>
+											<div class="card-product__picture">
+												<div data-swiper class="card-product__swiper">
+													<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/02.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+														<div data-swiper-slide class="card-product__swiper-slide">
+															<picture><source data-srcset="img/prodicts/02.webp" type="image/webp"><img class="swiper-lazy" data-src="img/prodicts/02.jpg" alt="card-product"></picture>
+															<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+														</div>
+													</a>
+													<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_small swiper-button_left">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+													<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_small swiper-button_right">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h4 class="card-product__title"><a href="#">Солнцезащитные очки в металлической оправе</a></h4>
+										<div class="card-product__prices">
+											<span class="price">$89.95</span>
+										</div>
+										<div class="card-product__hover-body">
+											<div class="card-product__row">
+												<div class="card-product__sizes choose-size">
+													<label class="choose-size__type"><input type="radio" name="choose-size-2" value="l"><span>l</span></label>
+													<label class="choose-size__type"><input type="radio" name="choose-size-2" value="xl"><span>xl</span></label>
+												</div>
+											</div>
+											<button type="button" class="card-product__button button button_short button_solid button_fw">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												Добавить в корзину
+											</button>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="new-arrivals__swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__tiles-section tiles-section">
+					<h2 class="hidden">Акции, скидки и новинки</h2>
+					<article style="background-image: url('img/main-slider/03.png');" class="tiles-section__item tiles-item">
+						<span class="tiles-item__subtitle">Летняя коллекция</span>
+						<h3 class="tiles-item__title">Распродажа до 70%</h3>
+						<a href="#" class="tiles-item__link button button_tall button_outline">Увидеть новые цены</a>
+					</article>
+					<article style="background-image: url('img/main-slider/02.png');" class="tiles-section__item tiles-section__item_big tiles-item">
+						<span class="tiles-item__subtitle">Товар недели</span>
+						<h3 class="tiles-item__title">Оставайтесь в тепле <br> с нашими новыми свитерами</h3>
+						<a href="#" class="tiles-item__link button button_tall button_outline">Купить сейчас</a>
+						<div class="tiles-item__timer timer-tiles">
+							<span class="timer-tiles__title">Ограниченное предложение</span>
+							<div class="timer-tiles__item timer-tiles__item_days">
+								<span>06</span>
+								<span>Дней</span>
+							</div>
+							<div class="timer-tiles__item timer-tiles__item_hours">
+								<span>18</span>
+								<span>Часов</span>
+							</div>
+							<div class="timer-tiles__item timer-tiles__item_mins">
+								<span>24</span>
+								<span>Минуты</span>
+							</div>
+							<div class="timer-tiles__item timer-tiles__item_sec">
+								<span>12</span>
+								<span>Секунд</span>
+							</div>
+						</div>
+					</article>
+					<article style="background-image: url('img/main-slider/04.png');" class="tiles-section__item tiles-section__item_big tiles-item">
+						<span class="tiles-item__subtitle">Новая коллекция</span>
+						<h3 class="tiles-item__title">Обувь и сумки <br> осень / зима 2022</h3>
+						<a href="#" class="tiles-item__link button button_tall button_outline">
+							Посмотреть предложения
+							<svg>
+								<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+							</svg>
+						</a>
+					</article>
+					<article style="background-image: url('img/main-slider/05.png');" class="tiles-section__item tiles-item">
+						<span class="tiles-item__subtitle">Для всех новых подписчиков электронной почты</span>
+						<h3 class="tiles-item__title">Получите скидку 5% и бесплатную доставку</h3>
+						<form action="#" class="tiles-item__form form-label" data-dev>
+							<label for="mail-tiles">Email</label>
+							<div class="form-label__row">
+								<div class="form-label__input">
+									<input data-required="email" id="mail-tiles" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+								</div>
+								<button class="button button_tall button_solid" type="submit">Подписаться</button>
+							</div>
+						</form>
+						<span class="tiles-item__important">*Подпишитесь, чтобы первыми узнавать об эксклюзивных предложениях, специальных предложениях и предстоящих коллекциях.</span>
+					</article>
+				</section>
+				<section class="page__popular-categories popular-categories">
+					<div class="popular-categories__container">
+						<h2 class="popular-categories__title title title_center">Популярные категории</h2>
+						<div class="popular-categories__grid">
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/01.webp" type="image/webp"><img src="img/pop-categ/01.png" alt="Топы"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Топы</a></h4>
+							</article>
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/02.webp" type="image/webp"><img src="img/pop-categ/02.png" alt="Футболки"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Футболки</a></h4>
+							</article>
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/03.webp" type="image/webp"><img src="img/pop-categ/03.png" alt="Кепки"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Кепки</a></h4>
+							</article>
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/04.webp" type="image/webp"><img src="img/pop-categ/04.png" alt="Сандали"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Сандали</a></h4>
+							</article>
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/05.webp" type="image/webp"><img src="img/pop-categ/05.png" alt="Куртки"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Куртки</a></h4>
+							</article>
+							<article class="popular-categories__item">
+								<a href="#" class="popular-categories__picture">
+									<picture><source srcset="img/pop-categ/06.webp" type="image/webp"><img src="img/pop-categ/06.png" alt="Пальто"></picture>
+								</a>
+								<h4 class="popular-categories__categorie"><a href="#">Пальто</a></h4>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="page__sliders-cards sliders-cards sliders-cards_gray">
+					<div class="sliders-cards__container">
+						<div class="sliders-cards__header">
+							<h2 class="sliders-cards__title title">Актуальные</h2>
+							<div class="sliders-cards__nav">
+								<button class="sliders-cards__btn swiper-button swiper-button_hv swiper-button_left">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+									</svg>
+								</button>
+								<button class="sliders-cards__btn swiper-button swiper-button_hv swiper-button_right">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="sliders-cards__body">
+							<div data-swiper class="sliders-cards__swiper sliders-cards__swiper_three">
+								<div data-swiper-wrapper class="sliders-cards__swiper-wrapper">
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Рубашка с кружевными вставками</h4>
+											<div class="card-product__prices">
+												<span class="price">$49.95</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-1" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-1" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1" value="xl"><span>xl</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Часы с синим кожаным ремешком</h4>
+											<div class="card-product__prices">
+												<span class="price">$120.60</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-2" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-2" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-2" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-2" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-2" value="xl"><span>xl</span></label>
+													</div>
+													<div class="card-product__color choose-color">
+														<label class="choose-color__type"><input type="radio" name="slide-card-2" value="1" checked><span style="background-color: #C0DDED;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-2" value="2"><span style="background-color: #874E19;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-2" value="3"><span style="background-color: #000000;"></span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/03.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/03.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Пальто в клетку контрастного цвета</h4>
+											<div class="card-product__prices">
+												<span class="price">$183.45</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-3" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-3" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-3" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-3" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-3" value="xl"><span>xl</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Рубашка с кружевными вставками</h4>
+											<div class="card-product__prices">
+												<span class="price">$49.95</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-4" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-4" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-4" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-4" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-4" value="xl"><span>xl</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/01.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/01.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Часы с синим кожаным ремешком</h4>
+											<div class="card-product__prices">
+												<span class="price">$120.60</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-5" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-5" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-5" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-5" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-5" value="xl"><span>xl</span></label>
+													</div>
+													<div class="card-product__color choose-color">
+														<label class="choose-color__type"><input type="radio" name="slide-card-5" value="1" checked><span style="background-color: #C0DDED;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-5" value="2"><span style="background-color: #874E19;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-5" value="3"><span style="background-color: #000000;"></span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/03.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/03.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/03.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Пальто в клетку контрастного цвета</h4>
+											<div class="card-product__prices">
+												<span class="price">$183.45</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-6" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input checked type="radio" name="slide-card-6" value="s"><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-6" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-6" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-6" value="xl"><span>xl</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="sliders-cards__link button button_outline button_tall button_large">Показать лушие товары</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__sliders-cards sliders-cards">
+					<div class="sliders-cards__container">
+						<div class="sliders-cards__header">
+							<h2 class="sliders-cards__title title">Распродажа до 70%</h2>
+							<div class="sliders-cards__nav">
+								<button class="sliders-cards__btn swiper-button swiper-button_hv swiper-button_left">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+									</svg>
+								</button>
+								<button class="sliders-cards__btn swiper-button swiper-button_hv swiper-button_right">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="sliders-cards__body">
+							<div data-swiper class="sliders-cards__swiper sliders-cards__swiper_three">
+								<div data-swiper-wrapper class="sliders-cards__swiper-wrapper">
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__sales">
+													<span class="card-product__sale sale-label">-50%</span>
+												</div>
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/04.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/04.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Кожаная сумка через плечо с золотой фурнитурой</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$89.50</span>
+												<span class="price price_old">$179.00</span>
+											</div>
+											<div class="card-product__hover-body">
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__sales">
+													<span class="card-product__sale sale-label">-50%</span>
+												</div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/05.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/05.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Джинсы скинни пуш-ап</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$40.00</span>
+												<span class="price price_old">$80.00</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-2" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-2" value="s" checked><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-2" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-2" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-2" value="xl"><span>xl</span></label>
+													</div>
+													<div class="card-product__color choose-color">
+														<label class="choose-color__type"><input type="radio" name="slide-card-1-2" value="1" checked><span style="background-color: #C0DDED;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-1-2" value="3"><span style="background-color: #000000;"></span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/06.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/06.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Замшевые ботильоны на широком каблуке</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$119.16</span>
+												<span class="price price_old">$148.95</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-3" value="36"><span>36</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-3" value="37" checked><span>37</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-3" value="38"><span>38</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-3" value="39"><span>39</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-3" value="40"><span>40</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__sales">
+													<span class="card-product__sale sale-label">-50%</span>
+												</div>
+												<div class="card-product__rating rating" data-grade="5"></div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/04.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/04.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/04.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Кожаная сумка через плечо с золотой фурнитурой</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$89.50</span>
+												<span class="price price_old">$179.00</span>
+											</div>
+											<div class="card-product__hover-body">
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<div class="card-product__sales">
+													<span class="card-product__sale sale-label">-50%</span>
+												</div>
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/05.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/05.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/05.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Джинсы скинни пуш-ап</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$40.00</span>
+												<span class="price price_old">$80.00</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-4" value="xs"><span>xs</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-4" value="s" checked><span>s</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-4" value="m"><span>m</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-4" value="l"><span>l</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-4" value="xl"><span>xl</span></label>
+													</div>
+													<div class="card-product__color choose-color">
+														<label class="choose-color__type"><input type="radio" name="slide-card-1-4" value="1" checked><span style="background-color: #C0DDED;"></span></label>
+														<label class="choose-color__type"><input type="radio" name="slide-card-1-4" value="3"><span style="background-color: #000000;"></span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+									<div data-swiper-slide class="sliders-cards__swiper-slide">
+										<article class="card-product">
+											<div class="card-product__info">
+												<label class="card-product__like like">
+													<input type="checkbox"> <span></span>
+												</label>
+												<div class="card-product__picture">
+													<div data-swiper class="card-product__swiper">
+														<a href="#" data-swiper-wrapper class="card-product__swiper-wrapper">
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/06.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+															<div data-swiper-slide class="card-product__swiper-slide">
+																<picture><source data-srcset="img/swiper-cards/06.webp" type="image/webp"><img class="swiper-lazy" data-src="img/swiper-cards/06.png" alt="card-product"></picture>
+																<div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+															</div>
+														</a>
+														<div class="card-product__swiper-button card-product__swiper-button_left swiper-button swiper-button_left">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+														<div class="card-product__swiper-button card-product__swiper-button_right swiper-button swiper-button_right">
+															<svg>
+																<use xlink:href="img/icons/icons.svg#svg-arr"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h4 class="card-product__title">Замшевые ботильоны на широком каблуке</h4>
+											<div class="card-product__prices">
+												<span class="price price_new">$119.16</span>
+												<span class="price price_old">$148.95</span>
+											</div>
+											<div class="card-product__hover-body">
+												<div class="card-product__row">
+													<div class="card-product__sizes choose-size">
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-5" value="36"><span>36</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-5" value="37" checked><span>37</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-5" value="38"><span>38</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-5" value="39"><span>39</span></label>
+														<label class="choose-size__type"><input type="radio" name="slide-card-1-5" value="40"><span>40</span></label>
+													</div>
+												</div>
+												<button type="button" class="card-product__button button button_short button_solid button_fw">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+													</svg>
+													Добавить в корзину
+												</button>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="sliders-cards__link button button_outline button_tall button_large">Показать лушие товары</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__mobile-app mobile-app">
+					<div class="mobile-app__container">
+						<div class="mobile-app__picture">
+							<picture><source srcset="img/mob-app/image.webp" type="image/webp"><img src="img/mob-app/image.png" alt="Покупайте вещи через мобильное приложение "></picture>
+						</div>
+						<div class="mobile-app__col">
+							<h2 class="mobile-app__title title-mid title-mid_white">Наслаждайтесь мобильными покупками с нашим приложением!</h2>
+							<div class="mobile-app__links">
+								<a href="#" class="mobile-app__link link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/as.svg" alt="app store">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>App Store</b>
+									</div>
+								</a>
+								<a href="#" class="mobile-app__link link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/gp.svg" alt="google play">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>Google Play</b>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__benefits benefits">
+					<div class="benefits__container">
+						<h2 class="hidden">Преимущества</h2>
+						<ul class="benefits__items">
+							<li class="benefits__item">
+								<article class="card-benefits">
+									<div class="card-benefits__picture">
+										<img src="img/benefits/01.svg" alt="Быстрая доставка по всему миру">
+									</div>
+									<h3 class="card-benefits__title">Быстрая доставка</h3>
+									<span class="card-benefits__text">Получите бесплатную доставку на сумму свыше 250$</span>
+								</article>
+							</li>
+							<li class="benefits__item">
+								<article class="card-benefits">
+									<div class="card-benefits__picture">
+										<img src="img/benefits/02.svg" alt="Быстрая доставка по всему миру">
+									</div>
+									<h3 class="card-benefits__title">Круглосуточная поддержка</h3>
+									<span class="card-benefits__text">Дружелюбная круглосуточная поддержка клиентов</span>
+								</article>
+							</li>
+							<li class="benefits__item">
+								<article class="card-benefits">
+									<div class="card-benefits__picture">
+										<img src="img/benefits/03.svg" alt="Быстрая доставка по всему миру">
+									</div>
+									<h3 class="card-benefits__title">Гарантия возврата</h3>
+									<span class="card-benefits__text">Возвращаем деньги в течение 30 дней</span>
+								</article>
+							</li>
+							<li class="benefits__item">
+								<article class="card-benefits">
+									<div class="card-benefits__picture">
+										<img src="img/benefits/04.svg" alt="Быстрая доставка по всему миру">
+									</div>
+									<h3 class="card-benefits__title">Безопасный онлайн-платеж</h3>
+									<span class="card-benefits__text">Принимаем все основные кредитные карты</span>
+								</article>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="page__follow-us follow-us">
+					<div class="follow-us__container">
+						<div class="follow-us__info">
+							<span class="follow-us__subtitle">Следите за нами в Instagram</span>
+							<h2 class="follow-us__title title">@c_store</h2>
+							<a href="#" class="follow-us__btn button button_tall button_large button_outline">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-inst"></use>
+								</svg>
+								<span>Подпишитесь</span>
+							</a>
+						</div>
+						<div class="follow-us__gallery" data-gallery>
+							<a href="img/gallery_follow/01.png" class="follow-us__photo">
+								<picture><source srcset="img/gallery_follow/01.webp" type="image/webp"><img src="img/gallery_follow/01.png" alt="Мужская одежда"></picture>
+							</a>
+							<a href="img/gallery_follow/02.png" class="follow-us__photo">
+								<picture><source srcset="img/gallery_follow/02.webp" type="image/webp"><img src="img/gallery_follow/02.png" alt="Кроссовки"></picture>
+							</a>
+							<a href="img/gallery_follow/03.png" class="follow-us__photo">
+								<picture><source srcset="img/gallery_follow/03.webp" type="image/webp"><img src="img/gallery_follow/03.png" alt="Детская одежда"></picture>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__advertising-blog fashion-blog">
+					<div class="fashion-blog__container">
+						<div class="fashion-blog__header">
+							<h2 class="fashion-blog__title title">Модный блог</h2>
+							<a href="#" class="fashion-blog__link button button_short button_outline">Показать блог</a>
+						</div>
+						<div class="fashion-blog__posts">
+							<article class="fashion-blog__post post-link post-link_shadow">
+								<a href="#" class="post-link__picture-ibg">
+									<picture><source srcset="img/blog/01.webp" type="image/webp"><img src="img/blog/01.png" alt="Корзинка с вещами"></picture>
+								</a>
+								<h4 tabindex="0" class="post-link__title" data-href="#">Тенденции сумок на лето 2020</h4>
+								<div class="post-link__info post-info">
+									<a href="#" class="post-info__item post-info__item_chapter">Мода</a>
+									<time class="post-info__item post-info__item_time" datetime="2022-08-24">Август 24, 2022</time>
+									<span class="post-info__item post-info__item_comment">Комментарии: <span>&nbsp;0</span></span>
+								</div>
+								<p class="post-link__preview">
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дал прямо реторический образ...
+								</p>
+							</article>
+							<article class="fashion-blog__post post-link post-link_shadow">
+								<a href="#" class="post-link__picture-ibg">
+									<picture><source srcset="img/blog/02.webp" type="image/webp"><img src="img/blog/02.png" alt="Белые кроссовки"></picture>
+								</a>
+								<h4 tabindex="0" class="post-link__title" data-href="#">Топ-10 самых популярных кроссовок этого сезона</h4>
+								<div class="post-link__info post-info">
+									<a href="#" class="post-info__item post-info__item_chapter">Разное</a>
+									<time class="post-info__item post-info__item_time" datetime="2022-06-16">Июнь 16, 2022</time>
+									<span class="post-info__item post-info__item_comment">Комментарии: <span>&nbsp;4</span></span>
+								</div>
+								<p class="post-link__preview">
+									Далеко-далеко за словесными горами в стране гласных. Алфавит ведущими, журчит заголовок...
+								</p>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="page__sponsors sponsors">
+					<div class="sponsors__container">
+						<h3 class="hidden">Спонсоры</h3>
+						<ul class="sponsors__items">
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/01.webp" type="image/webp"><img src="img/sponsors/01.png" alt="inDepth Consulting"></picture>
+							</li>
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/02.webp" type="image/webp"><img src="img/sponsors/02.png" alt="Higher fit"></picture>
+							</li>
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/03.webp" type="image/webp"><img src="img/sponsors/03.png" alt="Senrinal Consulting"></picture>
+							</li>
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/04.webp" type="image/webp"><img src="img/sponsors/04.png" alt="National"></picture>
+							</li>
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/05.webp" type="image/webp"><img src="img/sponsors/05.png" alt="For Sale"></picture>
+							</li>
+							<li class="sponsors__item">
+								<picture><source srcset="img/sponsors/06.webp" type="image/webp"><img src="img/sponsors/06.png" alt="Del Mar Strategy"></picture>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="page__subscribe subscribe">
+					<div class="subscribe__container">
+						<div class="subscribe__picture">
+							<picture><source srcset="img/subscribe/01.webp" type="image/webp"><img src="img/subscribe/01.png" alt="Парень приносит письма"></picture>
+						</div>
+						<form action="#" data-dev class="subscribe__form form-subscribe">
+							<h2 class="form-subscribe__title title">Подпишитесь на обновления</h2>
+							<span class="form-subscribe__subtitle">Подпишитесь, чтобы получить эксклюзивный доступ к ранней распродаже и новым поступлениям.</span>
+							<div class="form-subscribe__radios">
+								<input tabindex="-1" id="subscr-1" type="radio" name="subscribe-form" value="Women" class="hidden">
+								<label tabindex="0" for="subscr-1" class="form-subscribe__label"> Женщина </label>
+								<input tabindex="-1" id="subscr-2" type="radio" name="subscribe-form" value="Men" class="hidden">
+								<label tabindex="0" for="subscr-2" class="form-subscribe__label"> Мужчина </label>
+								<input tabindex="-1" id="subscr-3" type="radio" checked name="subscribe-form" value="Girls" class="hidden">
+								<label tabindex="0" for="subscr-3" class="form-subscribe__label"> Девочка </label>
+								<input tabindex="-1" id="subscr-4" type="radio" name="subscribe-form" value="Boys" class="hidden">
+								<label tabindex="0" for="subscr-4" class="form-subscribe__label"> Парень </label>
+							</div>
+							<div class="form-subscribe__email form-label">
+								<label for="mail-subscr">Email</label>
+								<div class="form-label__row">
+									<div class="form-label__input">
+										<input data-required="email" id="mail-subscr" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+									</div>
+									<button class="button button_tall button_solid" type="submit">Подписаться</button>
+								</div>
+							</div>
+							<div class="form-subscribe__agreement">
+								<label class="form-subscribe__checkbox checkbox">
+									<input data-required="" checked type="checkbox" class="checkbox__input">
+									<span class="checkbox__text"> Я согласен получать сообщения. </span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="footer__container">
+						<div class="footer__col">
+							<h5 class="footer__list-title">ПОМОЩЬ</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#">Доставка и возврат</a></li>
+								<li class="footer__item"><a href="#">FAQ</a></li>
+								<li class="footer__item"><a href="#">Отследить заказ</a></li>
+								<li class="footer__item"><a href="#">Контакты</a></li>
+								<li class="footer__item"><a href="#">Блог</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Магазин</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#">Новые поступления</a></li>
+								<li class="footer__item"><a href="#">FAQ</a></li>
+								<li class="footer__item"><a href="#">Скидки</a></li>
+								<li class="footer__item"><a href="#">Бренды</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Связаться</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><b>Вызов: </b><a href="tel:+4055550128">(405) 555-0128</a></li>
+								<li class="footer__item"><b>Email: </b><a href="mailto:hello@cate.com">hello@cate.com</a></li>
+							</ul>
+							<ul class="footer__links links-col">
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-inst"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-yt"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-pin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Скачать приложения</h5>
+							<div class="footer__apps">
+								<a href="#" class="link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/as.svg" alt="app store">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>App Store</b>
+									</div>
+								</a>
+								<a href="#" class="link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/gp.svg" alt="google play">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>Google Play</b>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__container">
+						<span class="footer__copy">© All rights reserved. Made with </span>
+						<a data-goto="header" data-goto-speed="1500" class="go-top">Наверх</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<nav class="burger-menu">
+			<button type="button" class="burger-btn burger-btn_close" data-close-menu="menu-open">
+				<span></span>
+			</button>
+			<div class="burger-menu__row burger-menu__row_menu-site"></div>
+			<div class="burger-menu__row burger-menu__row_menu-products"></div>
+		</nav>
+		<div class="cart-menu">
+			<div data-simplebar class="cart-menu__wrapper">
+				<header class="cart-menu__header">
+					<h4 class="cart-menu__title title-small">
+						Ваша корзина
+						(<span>4</span>)
+					</h4>
+					<button class="cart-menu__close" data-close-menu="cart-open"></button>
+				</header>
+				<ul class="cart-menu__list">
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="Базовая толстовка с капюшоном розового цвета"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Базовая толстовка с капюшоном розового цвета</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Цвет: <span>розовый</span></li>
+									<li>Размер: <span>S</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small price_new">$15.50</span>
+										<span class="price price_small price_old">$31.00</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/02.webp" type="image/webp"><img src="img/cart/02.png" alt="Черно-белая спортивная кепка"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Черно-белая спортивная кепка</h5>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$18.15</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/03.webp" type="image/webp"><img src="img/cart/03.png" alt="Узкие укороченные джинсы со средней посадкой"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Узкие укороченные джинсы со средней посадкой</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Размер: <span>M</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$80.00</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/04.webp" type="image/webp"><img src="img/cart/04.png" alt="Мужские модные серые туфли"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Мужские модные серые туфли</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Цвет: <span>серый</span></li>
+									<li>Размер: <span>M</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$85.50</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+				</ul>
+				<div class="cart-menu__total">
+					<div class="cart-menu__row">
+						<span class="cart-menu__subtitle">Итого:</span>
+						<span class="price">$198.65</span>
+					</div>
+					<a href="#" class="cart-menu__button button button_tall button__large button_fw  button_solid">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#svg-price-card"></use>
+						</svg>
+						Проверить
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="sign-in" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content_small">
+					<button data-close type="button" class="popup__close"></button>
+					<form data-dev action="#" class="popup__form form-popup">
+						<h3 class="form-popup__title">Войти</h3>
+						<span class="form-popup__subtitle">Войдите в свою учетную запись, используя адрес электронной почты и пароль, указанные при регистрации.</span>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="mail-popup">Email</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required="email" id="mail-popup" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="pass-popup">Пароль</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required id="pass-popup" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<label tabindex="0" class="form-subscribe__checkbox checkbox">
+								<input data-required="" checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__text"> Запомнить пароль </span>
+							</label>
+							<a class="form-popup__link" href="#">Забыли пароль?</a>
+						</div>
+						<div class="form-popup__row">
+							<button class="button button_tall button_solid button_fw" type="submit">Войти</button>
+						</div>
+						<div class="form-popup__row form-popup__row_left">
+							У вас нет аккаунта? <button class="form-popup__link" data-popup="#sign-up" type="button">Зарегистрироваться</button>
+						</div>
+					</form>
+					<div class="popup__sign-in-with sign-in-with">
+						<span class="sign-in-with__label">Или войдите с помощью</span>
+						<div class="sign-in-with__items">
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-google"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-in"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sign-up" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content_small">
+					<button data-close type="button" class="popup__close"></button>
+					<form data-dev action="#" class="popup__form form-popup">
+						<h3 class="form-popup__title">Зарегистрироваться</h3>
+						<span class="form-popup__subtitle">Регистрация занимает меньше минуты, но дает вам полный контроль над вашими заказами.</span>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="fname-popup">Ваше имя</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required id="fname-popup" data-send-message="Выглядит неплохо!" data-error="Введите имя" type="text" name="form[]" placeholder="Введите имя" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="mail-popup-sign-up">Email</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required="email" id="mail-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="pass-popup-sign-up">Пароль</label>
+								<div class="formlabeld__row form-label__row_fw">
+									<div class="form-label__input">
+										<input data-check-pass="1" data-required id="pass-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="conf-pass-popup-sign-up">Повторить пароль</label>
+								<div class="formlabeld__row">
+									<div class="form-label__input">
+										<input data-check-pass="1" data-required id="conf-pass-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<label class="form-subscribe__checkbox checkbox">
+								<input data-required="" checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__text"> Запомнить меня </span>
+							</label>
+						</div>
+						<div class="form-popup__row">
+							<button class="button button_tall button_solid button_fw" type="submit">Зарегистрироваться</button>
+						</div>
+						<div class="form-popup__row form-popup__row_left">
+							У вас уже есть аккаунт? <button class="form-popup__link" data-popup="#sign-in" type="button">Войти</button>
+						</div>
+					</form>
+					<div class="popup__sign-in-with sign-in-with">
+						<span class="sign-in-with__label">Или войдите с помощью</span>
+						<div class="sign-in-with__items">
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-google"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-in"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lds-roller">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<script src="js/app.min.js?_v=20220519160759"></script>
+</body>
+
+</html>

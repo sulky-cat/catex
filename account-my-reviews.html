@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Мои отзывы</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		._loadWrapper_ {
+			overflow: hidden;
+			opacity: 0;
+			pointer-events: none;
+			transition: all 0.4s ease-in-out 0s;
+		}
+
+		.lds-roller {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate3D(-50%, -50%, 0);
+			opacity: 1;
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+		}
+
+		.lds-roller div {
+			animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+			transform-origin: 40px 40px;
+		}
+
+		.lds-roller div:after {
+			content: " ";
+			display: block;
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #1e212c;
+			margin: -4px 0 0 -4px;
+		}
+
+		.lds-roller div:nth-child(1) {
+			animation-delay: -0.036s;
+		}
+
+		.lds-roller div:nth-child(1):after {
+			top: 63px;
+			left: 63px;
+		}
+
+		.lds-roller div:nth-child(2) {
+			animation-delay: -0.072s;
+		}
+
+		.lds-roller div:nth-child(2):after {
+			top: 68px;
+			left: 56px;
+		}
+
+		.lds-roller div:nth-child(3) {
+			animation-delay: -0.108s;
+		}
+
+		.lds-roller div:nth-child(3):after {
+			top: 71px;
+			left: 48px;
+		}
+
+		.lds-roller div:nth-child(4) {
+			animation-delay: -0.144s;
+		}
+
+		.lds-roller div:nth-child(4):after {
+			top: 72px;
+			left: 40px;
+		}
+
+		.lds-roller div:nth-child(5) {
+			animation-delay: -0.18s;
+		}
+
+		.lds-roller div:nth-child(5):after {
+			top: 71px;
+			left: 32px;
+		}
+
+		.lds-roller div:nth-child(6) {
+			animation-delay: -0.216s;
+		}
+
+		.lds-roller div:nth-child(6):after {
+			top: 68px;
+			left: 24px;
+		}
+
+		.lds-roller div:nth-child(7) {
+			animation-delay: -0.252s;
+		}
+
+		.lds-roller div:nth-child(7):after {
+			top: 63px;
+			left: 17px;
+		}
+
+		.lds-roller div:nth-child(8) {
+			animation-delay: -0.288s;
+		}
+
+		.lds-roller div:nth-child(8):after {
+			top: 56px;
+			left: 12px;
+		}
+
+		@keyframes lds-roller {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220519160759">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="_loadWrapper_">
+		<div class="wrapper">
+			<header class="header" id="header">
+				<div class="header__top top-header">
+					<div class="top-header__container">
+						<div class="top-header__schedule">
+							<span>24/7 по телефону</span> <a href="4055550128">(405) 555-0128</a>
+						</div>
+						<nav class="top-header__nav nav-site">
+							<ul data-da=".burger-menu__row_menu-site,991.98">
+								<li><a href="#">Доставка и возврат</a></li>
+								<li><a href="#">Отследить заказ</a></li>
+								<li><a href="#">Блог</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="top-header__choose-price choose-price">
+							<select data-scroll class="choose-price__select" name="form[]">
+								<option data-asset="img/header/flag-usa.png" value="Eng">Eng / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng2">Eng2 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng3">Eng3 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng4">Eng4 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng5">Eng5 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng6">Eng6 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng7">Eng7 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng8">Eng8 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng9">Eng9 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng10">Eng10 / $</option>
+								<option data-asset="img/header/flag-usa.png" value="Eng11">Eng11 / $</option>
+							</select>
+						</div>
+						<div class="top-header__login">
+							<button data-popup="#sign-in" type="button">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-login"></use>
+								</svg>
+								<span>Log in</span>
+							</button>
+							<button data-popup="#sign-up" type="button"><span>Register</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="header__middle middle-header">
+					<div class="middle-header__container">
+						<a href="#" class="middle-header__logo logo">
+							<span>Cate</span>
+							<img src="img/icons/logo.svg" alt="logo 'CATEX'">
+						</a>
+						<nav class="middle-header__nav">
+							<ul class="list-products" data-da=".burger-menu__row_menu-products,991.98">
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Женщинам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Размер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Платья</a></li>
+													<li class="fly-menu__item"><a href="#">Кардиганы и свитера</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки и топы</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Юбки</a></li>
+													<li class="fly-menu__item"><a href="#">Ночное белье</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+													<li class="fly-menu__item"><a href="#">Купальники</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Обувь на плоской подошве</a></li>
+													<li class="fly-menu__item"><a href="#">Туфли</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Мулы</a></li>
+													<li class="fly-menu__item"><a href="#">Слайдеры</a></li>
+													<li class="fly-menu__item"><a href="#">Тапочки</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Аксессуары для волос</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Ювелирные изделия</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+													<li class="fly-menu__item"><a href="#">Носки и колготки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Мужчинам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Девочкам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+											Назад
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Платья</a></li>
+													<li class="fly-menu__item"><a href="#">Кардиганы и свитера</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки и топы</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Юбки</a></li>
+													<li class="fly-menu__item"><a href="#">Ночное белье</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+													<li class="fly-menu__item"><a href="#">Купальники</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Обувь на плоской подошве</a></li>
+													<li class="fly-menu__item"><a href="#">Туфли</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Мулы</a></li>
+													<li class="fly-menu__item"><a href="#">Слайдеры</a></li>
+													<li class="fly-menu__item"><a href="#">Тапочки</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Аксессуары для волос</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Ювелирные изделия</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+													<li class="fly-menu__item"><a href="#">Носки и колготки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item">
+									<button class="list-products__button" type="button">Мальчикам</button>
+									<div class="fly-menu">
+										<button type="button" class="fly-menu__back">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+											</svg>
+										</button>
+										<div class="fly-menu__wrapper">
+											<div class="fly-menu__column">
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Новая коллекция</a></li>
+													<li class="fly-menu__item"><a href="#">Бестселлеры</a></li>
+													<li class="fly-menu__item"><a href="#">Разсер "плюс"</a></li>
+													<li class="fly-menu__item sale"><a href="#">Распродажа до 70%</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">ОДЕЖДА</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Пальто</a></li>
+													<li class="fly-menu__item"><a href="#">Куртки</a></li>
+													<li class="fly-menu__item"><a href="#">Костюмы</a></li>
+													<li class="fly-menu__item"><a href="#">Толстовки</a></li>
+													<li class="fly-menu__item"><a href="#">Футболки</a></li>
+													<li class="fly-menu__item"><a href="#">Штаны</a></li>
+													<li class="fly-menu__item"><a href="#">Шорты</a></li>
+													<li class="fly-menu__item"><a href="#">Спортивная одежда</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column">
+												<a href="#" class="fly-menu__title">Обувь</a>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сапоги</a></li>
+													<li class="fly-menu__item"><a href="#">Сандалии</a></li>
+													<li class="fly-menu__item"><a href="#">Кроссовки</a></li>
+													<li class="fly-menu__item"><a href="#">Кожаные</a></li>
+												</ul>
+											</div>
+											<div class="fly-menu__column fly-menu__column_big">
+												<div class="fly-menu__picture-ibg">
+													<picture><source srcset="img/cart/boy.webp" type="image/webp"><img src="img/cart/boy.png" alt="boy"></picture>
+												</div>
+												<h4 class="fly-menu__subtitle">Обратно в школу. Распродажа до 50%</h4>
+												<a class="button button_short button_outline" href="#">
+													<span>Все предложения</span>
+													<svg class="arrow-svg">
+														<use xlink:href="img/icons/icons.svg#svg-arrow"></use>
+													</svg>
+												</a>
+											</div>
+											<div class="fly-menu__column">
+												<h3 class="fly-menu__title">АКСЕССУАРЫ</h3>
+												<ul class="fly-menu__list">
+													<li class="fly-menu__item"><a href="#">Сумки и рюкзаки</a></li>
+													<li class="fly-menu__item"><a href="#">Шапки и шарфы</a></li>
+													<li class="fly-menu__item"><a href="#">Ремни</a></li>
+													<li class="fly-menu__item"><a href="#">Часы</a></li>
+													<li class="fly-menu__item"><a href="#">Солнцезащитные очки</a></li>
+													<li class="fly-menu__item"><a href="#">Кошельки</a></li>
+													<li class="fly-menu__item"><a href="#">Перчатки</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="list-products__item sale">
+									<a href="#" class="list-products__button">Распродажа</a>
+								</li>
+							</ul>
+						</nav>
+						<form action="#" method="GET" data-coes="active" class="middle-header__search search-form search-form_header">
+							<button type="button" class="search-form__open-mob">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-search"></use>
+								</svg>
+							</button>
+							<div class="search-form__row">
+								<input autocomplete="on" type="text" name="form[]" placeholder="Поиск продуктов..." class="input">
+								<button class="search-form__go" type="submit">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-search"></use>
+									</svg>
+								</button>
+							</div>
+						</form>
+						<div class="middle-header__my-product">
+							<div class="middle-header__item middle-header__item_like">
+								<a class="middle-header__link" href="#">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+									<span>2</span>
+								</a>
+							</div>
+							<div class="middle-header__item middle-header__item_cart">
+								<button class="middle-header__link" type="button" data-open="cart-open">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+									</svg>
+									<span>4</span>
+								</button>
+							</div>
+						</div>
+						<button type="button" class="burger-btn" data-open="menu-open">
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<a href="#" class="header__bottom">
+					<div class="header__sale"><span><b>Скидка до 70%.</b> Shop our latest sale styles</span></div>
+				</a>
+			</header>
+			<div class="bread-crumbs">
+				<div class="bread-crumbs__container">
+					<ul class="bread-crumbs__list">
+						<li class="bread-crumbs__item">
+							<a href="#">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-home"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="bread-crumbs__item"><a href="#">Аккаунт</a></li>
+						<li class="bread-crumbs__item"><a>Мои отзывы</a></li>
+					</ul>
+				</div>
+			</div>
+			<main class="page">
+				<div class="page__account account-wrapper">
+					<div class="account-wrapper__container">
+						<div data-sticky="991.98" data-sticky-top="20" class="account-wrapper__aside-wrapper">
+							<aside data-sticky-item class="account-wrapper__aside aside-account">
+								<div class="aside-account__header">
+									<h5 class="aside-account__name">Евгений Усташевский</h5>
+									<span class="aside-account__mail">ustash@example.com</span>
+								</div>
+								<nav class="aside-account__nav">
+									<a class="aside-account__link link-aside" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-login"></use>
+										</svg>
+										<span class="link-aside__text">Мой профиль</span>
+									</a>
+									<a class="aside-account__link link-aside" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-orders"></use>
+										</svg>
+										<span class="link-aside__text">Мои заказы</span>
+									</a>
+									<a class="aside-account__link link-aside" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-like"></use>
+										</svg>
+										<span class="link-aside__text">Список желаний</span>
+										<span class="link-aside__quantity">2</span>
+									</a>
+									<a class="aside-account__link link-aside" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+										</svg>
+										<span class="link-aside__text">Недавно просмотренные</span>
+									</a>
+									<a class="aside-account__link link-aside active" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-star"></use>
+										</svg>
+										<span class="link-aside__text">Мои отзывы</span>
+									</a>
+									<a class="aside-account__link link-aside" href="#">
+										<svg class="link-aside__icon">
+											<use xlink:href="img/icons/icons.svg#svg-out"></use>
+										</svg>
+										<span class="link-aside__text">Выйти</span>
+									</a>
+								</nav>
+							</aside>
+						</div>
+						<section class="account-wrapper__main">
+							<div class="account-wrapper__header">
+								<h1 class="account-wrapper__title title-mid">Мои отзывы</h1>
+								<div class="account-wrapper__sort sort">
+									<span class="sort__name">Сортировать отзывы</span>
+									<select name="form[]" class="select">
+										<option value="1" selected>Все</option>
+										<option value="2">Популярности</option>
+										<option value="3">Оценкам</option>
+									</select>
+								</div>
+							</div>
+							<section data-spollers class="account-wrapper__inner reviews-account">
+								<ul class="reviews-account__reviews reviews-list">
+									<li class="reviews-list__item review">
+										<div class="review__for">
+											<span>Для: </span>
+											<a href="#">Часы Chrono с синим кожаным ремешком</a>
+										</div>
+										<div class="review__info">
+											<div class="review__name">Евгений Усташевский</div>
+											<time datetime="2021-07-15" class="review__date">Июль 15, 2021</time>
+											<div class="review__grade rating" data-grade="5"></div>
+										</div>
+										<div class="review__content">
+											<div class="review__text">
+												<p>
+													Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Знаках даже рекламных назад не силуэт эта буквенных однажды проектах сбить скатился, выйти раз! Скатился запятой это переписали рот большой!
+												</p>
+											</div>
+											<div class="review__footer">
+												<button class="review__reply" type="button">Ответить</button>
+												<div class="review__estimates">
+													<button class="review__like">2</button>
+													<button class="review__dislike">0</button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="reviews-list__item review">
+										<div class="review__for">
+											<span>Для: </span>
+											<a href="#">Тренч из смесового модала</a>
+										</div>
+										<div class="review__info">
+											<div class="review__name">Евгений Усташевский</div>
+											<time datetime="2021-07-15" class="review__date">Июль 15, 2021</time>
+											<div class="review__grade rating" data-grade="4"></div>
+										</div>
+										<div class="review__content">
+											<div class="review__text">
+												<p>
+													Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные тексты. Знаках даже рекламных назад не силуэт эта буквенных однажды проектах сбить скатился, выйти раз! Скатился запятой это переписали рот большой!
+												</p>
+											</div>
+											<div class="review__footer">
+												<button class="review__reply" type="button">Ответить</button>
+												<div class="review__estimates">
+													<button class="review__like">3</button>
+													<button class="review__dislike">1</button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="reviews-list__item review">
+										<div class="review__for">
+											<span>Для: </span>
+											<a href="#">Джинсовые шорты</a>
+										</div>
+										<div class="review__info">
+											<div class="review__name">Евгений Усташевский</div>
+											<time datetime="2021-07-15" class="review__date">Июль 15, 2021</time>
+											<div class="review__grade rating" data-grade="5"></div>
+										</div>
+										<div class="review__content">
+											<div class="review__text">
+												<p>
+													Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Знаках даже рекламных назад не силуэт эта буквенных однажды проектах сбить скатился, выйти раз! Скатился запятой это переписали рот большой!
+												</p>
+											</div>
+											<div class="review__footer">
+												<button class="review__reply" type="button">Ответить</button>
+												<div class="review__estimates">
+													<button class="review__like">2</button>
+													<button class="review__dislike">0</button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="reviews-list__item review">
+										<div class="review__for">
+											<span>Для: </span>
+											<a href="#">Тренч из смесового модала</a>
+										</div>
+										<div class="review__info">
+											<div class="review__name">Евгений Усташевский</div>
+											<time datetime="2021-07-15" class="review__date">Июль 15, 2021</time>
+											<div class="review__grade rating" data-grade="4"></div>
+										</div>
+										<div class="review__content">
+											<div class="review__text">
+												<p>
+													Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные горами в стране гласных и согласных живут рыбные тексты. Знаках даже рекламных назад не силуэт эта буквенных однажды проектах сбить скатился, выйти раз! Скатился запятой это переписали рот большой!
+												</p>
+											</div>
+											<div class="review__footer">
+												<button class="review__reply" type="button">Ответить</button>
+												<div class="review__estimates">
+													<button class="review__like">3</button>
+													<button class="review__dislike">1</button>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+							<button class="account-wrapper__more">
+								<img src="img/icons/more.svg" alt="loadMore">
+								<span>Показать больше</span>
+							</button>
+						</section>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="footer__container">
+						<div class="footer__col">
+							<h5 class="footer__list-title">ПОМОЩЬ</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#">Доставка и возврат</a></li>
+								<li class="footer__item"><a href="#">FAQ</a></li>
+								<li class="footer__item"><a href="#">Отследить заказ</a></li>
+								<li class="footer__item"><a href="#">Контакты</a></li>
+								<li class="footer__item"><a href="#">Блог</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Магазин</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><a href="#">Новые поступления</a></li>
+								<li class="footer__item"><a href="#">FAQ</a></li>
+								<li class="footer__item"><a href="#">Скидки</a></li>
+								<li class="footer__item"><a href="#">Бренды</a></li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Связаться</h5>
+							<ul class="footer__list">
+								<li class="footer__item"><b>Вызов: </b><a href="tel:+4055550128">(405) 555-0128</a></li>
+								<li class="footer__item"><b>Email: </b><a href="mailto:hello@cate.com">hello@cate.com</a></li>
+							</ul>
+							<ul class="footer__links links-col">
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-inst"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-yt"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links-col__item">
+									<a href="#">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#svg-pin"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__col">
+							<h5 class="footer__list-title">Скачать приложения</h5>
+							<div class="footer__apps">
+								<a href="#" class="link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/as.svg" alt="app store">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>App Store</b>
+									</div>
+								</a>
+								<a href="#" class="link-mob-app">
+									<div class="link-mob-app__picture">
+										<img src="img/mob-app/gp.svg" alt="google play">
+									</div>
+									<div class="link-mob-app__text">
+										<span>Скачать в</span>
+										<b>Google Play</b>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__container">
+						<span class="footer__copy">© All rights reserved. Made with </span>
+						<a data-goto="header" data-goto-speed="1500" class="go-top">Наверх</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<nav class="burger-menu">
+			<button type="button" class="burger-btn burger-btn_close" data-close-menu="menu-open">
+				<span></span>
+			</button>
+			<div class="burger-menu__row burger-menu__row_menu-site"></div>
+			<div class="burger-menu__row burger-menu__row_menu-products"></div>
+		</nav>
+		<div class="cart-menu">
+			<div data-simplebar class="cart-menu__wrapper">
+				<header class="cart-menu__header">
+					<h4 class="cart-menu__title title-small">
+						Ваша корзина
+						(<span>4</span>)
+					</h4>
+					<button class="cart-menu__close" data-close-menu="cart-open"></button>
+				</header>
+				<ul class="cart-menu__list">
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/01.webp" type="image/webp"><img src="img/cart/01.png" alt="Базовая толстовка с капюшоном розового цвета"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Базовая толстовка с капюшоном розового цвета</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Цвет: <span>розовый</span></li>
+									<li>Размер: <span>S</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small price_new">$15.50</span>
+										<span class="price price_small price_old">$31.00</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/02.webp" type="image/webp"><img src="img/cart/02.png" alt="Черно-белая спортивная кепка"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Черно-белая спортивная кепка</h5>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$18.15</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/03.webp" type="image/webp"><img src="img/cart/03.png" alt="Узкие укороченные джинсы со средней посадкой"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Узкие укороченные джинсы со средней посадкой</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Размер: <span>M</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$80.00</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+					<li class="cart-menu__item">
+						<article class="item-cart-menu">
+							<div class="item-cart-menu__picture">
+								<picture><source srcset="img/cart/04.webp" type="image/webp"><img src="img/cart/04.png" alt="Мужские модные серые туфли"></picture>
+							</div>
+							<div class="item-cart-menu__info">
+								<h5 class="item-cart-menu__title">Мужские модные серые туфли</h5>
+								<ul class="item-cart-menu__parameters cart-parameters">
+									<li>Цвет: <span>серый</span></li>
+									<li>Размер: <span>M</span></li>
+								</ul>
+								<div class="item-cart-menu__quantity">
+									<div class="quantity">
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<div class="quantity__buttons">
+											<button type="button" class="quantity__button quantity__button_plus _icon-plus"></button>
+											<button type="button" class="quantity__button quantity__button_minus _icon-minus"></button>
+										</div>
+									</div>
+									<div class="item-cart-menu__prices">
+										<span class="price price_small">$85.50</span>
+									</div>
+								</div>
+								<button type="button" class="item-cart-menu__move-to ">
+									Перенести в
+									<svg>
+										<use xlink:href="img/icons/icons.svg#svg-like"></use>
+									</svg>
+								</button>
+							</div>
+							<button type="button" class="item-cart-menu__trash">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-trash"></use>
+								</svg>
+							</button>
+						</article>
+					</li>
+				</ul>
+				<div class="cart-menu__total">
+					<div class="cart-menu__row">
+						<span class="cart-menu__subtitle">Итого:</span>
+						<span class="price">$198.65</span>
+					</div>
+					<a href="#" class="cart-menu__button button button_tall button__large button_fw  button_solid">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#svg-price-card"></use>
+						</svg>
+						Проверить
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="sign-in" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content_small">
+					<button data-close type="button" class="popup__close"></button>
+					<form data-dev action="#" class="popup__form form-popup">
+						<h3 class="form-popup__title">Войти</h3>
+						<span class="form-popup__subtitle">Войдите в свою учетную запись, используя адрес электронной почты и пароль, указанные при регистрации.</span>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="mail-popup">Email</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required="email" id="mail-popup" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="pass-popup">Пароль</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required id="pass-popup" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<label tabindex="0" class="form-subscribe__checkbox checkbox">
+								<input data-required="" checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__text"> Запомнить пароль </span>
+							</label>
+							<a class="form-popup__link" href="#">Забыли пароль?</a>
+						</div>
+						<div class="form-popup__row">
+							<button class="button button_tall button_solid button_fw" type="submit">Войти</button>
+						</div>
+						<div class="form-popup__row form-popup__row_left">
+							У вас нет аккаунта? <button class="form-popup__link" data-popup="#sign-up" type="button">Зарегистрироваться</button>
+						</div>
+					</form>
+					<div class="popup__sign-in-with sign-in-with">
+						<span class="sign-in-with__label">Или войдите с помощью</span>
+						<div class="sign-in-with__items">
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-google"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-in"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sign-up" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content_small">
+					<button data-close type="button" class="popup__close"></button>
+					<form data-dev action="#" class="popup__form form-popup">
+						<h3 class="form-popup__title">Зарегистрироваться</h3>
+						<span class="form-popup__subtitle">Регистрация занимает меньше минуты, но дает вам полный контроль над вашими заказами.</span>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="fname-popup">Ваше имя</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required id="fname-popup" data-send-message="Выглядит неплохо!" data-error="Введите имя" type="text" name="form[]" placeholder="Введите имя" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="mail-popup-sign-up">Email</label>
+								<div class="form-label__row">
+									<div class="form-label__input form-label__input_fw">
+										<input data-required="email" id="mail-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите корректный Email" type="text" name="form[]" placeholder="Введите Email" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="pass-popup-sign-up">Пароль</label>
+								<div class="formlabeld__row form-label__row_fw">
+									<div class="form-label__input">
+										<input data-check-pass="1" data-required id="pass-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<div class="form-popup__input-wrapper form-label">
+								<label for="conf-pass-popup-sign-up">Повторить пароль</label>
+								<div class="formlabeld__row">
+									<div class="form-label__input">
+										<input data-check-pass="1" data-required id="conf-pass-popup-sign-up" data-send-message="Выглядит неплохо!" data-error="Введите верный пароль" type="password" name="form[]" placeholder="Введите пароль" class="input">
+										<button class="form-label__viewpass" type="button">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#svg-view-pass"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-popup__row">
+							<label class="form-subscribe__checkbox checkbox">
+								<input data-required="" checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__text"> Запомнить меня </span>
+							</label>
+						</div>
+						<div class="form-popup__row">
+							<button class="button button_tall button_solid button_fw" type="submit">Зарегистрироваться</button>
+						</div>
+						<div class="form-popup__row form-popup__row_left">
+							У вас уже есть аккаунт? <button class="form-popup__link" data-popup="#sign-in" type="button">Войти</button>
+						</div>
+					</form>
+					<div class="popup__sign-in-with sign-in-with">
+						<span class="sign-in-with__label">Или войдите с помощью</span>
+						<div class="sign-in-with__items">
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-fb"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-google"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-twitter"></use>
+								</svg>
+							</a>
+							<a href="#" class="sign-in-with__item">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#svg-in"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lds-roller">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<script src="js/app.min.js?_v=20220519160759"></script>
+</body>
+
+</html>
